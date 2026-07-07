@@ -14,7 +14,7 @@ export default function ProgressBar({ processed, total, batch, totalBatches }: P
   const pct = total > 0 ? Math.min(100, Math.round((processed / total) * 100)) : 0;
 
   return (
-    <div className="animate-fade-in rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+    <div className="card animate-fade-in p-6">
       <div className="mb-3 flex items-center justify-between">
         <div className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-200">
           <Loader2 className="h-4 w-4 animate-spin text-brand-500" />

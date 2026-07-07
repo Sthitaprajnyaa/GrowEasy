@@ -52,14 +52,14 @@ export default function UploadZone({ onFileSelected, disabled }: UploadZoneProps
           if (!disabled) handleFiles(e.dataTransfer.files);
         }}
         className={[
-          "group flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed px-6 py-16 text-center transition",
+          "group relative flex cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed px-6 py-16 text-center shadow-sm transition duration-200",
           dragOver
-            ? "border-brand-500 bg-brand-50 dark:border-brand-400 dark:bg-brand-500/10"
-            : "border-slate-300 bg-white hover:border-brand-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:hover:border-brand-500 dark:hover:bg-slate-800/50",
+            ? "scale-[1.01] border-brand-500 bg-brand-50 shadow-brand-500/10 dark:border-brand-400 dark:bg-brand-500/10"
+            : "border-slate-300 bg-white/80 backdrop-blur hover:-translate-y-0.5 hover:border-brand-400 hover:bg-brand-50/40 hover:shadow-md dark:border-slate-700 dark:bg-slate-900/60 dark:hover:border-brand-500 dark:hover:bg-slate-800/50",
           disabled ? "pointer-events-none opacity-60" : "",
         ].join(" ")}
       >
-        <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-brand-100 text-brand-600 transition group-hover:scale-105 dark:bg-brand-500/15 dark:text-brand-300">
+        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-100 to-brand-200 text-brand-600 shadow-inner transition duration-200 group-hover:scale-110 group-hover:rotate-3 dark:from-brand-500/20 dark:to-brand-500/5 dark:text-brand-300">
           <UploadCloud className="h-7 w-7" />
         </div>
         <p className="text-base font-semibold text-slate-800 dark:text-slate-100">

@@ -147,15 +147,19 @@ export default function Home() {
 
       <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
         {/* Hero */}
-        <div className="mb-8 text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold text-brand-700 dark:bg-brand-500/15 dark:text-brand-300">
+        <div className="mb-10 text-center">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 shadow-sm dark:border-brand-500/20 dark:bg-brand-500/10 dark:text-brand-300">
             <Sparkles className="h-3.5 w-3.5" />
             Powered by Gemini
           </span>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
-            Import leads from <span className="text-brand-600 dark:text-brand-400">any</span> CSV
+          <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
+            Import leads from{" "}
+            <span className="bg-gradient-to-r from-brand-500 to-emerald-400 bg-clip-text text-transparent">
+              any
+            </span>{" "}
+            CSV
           </h1>
-          <p className="mx-auto mt-3 max-w-xl text-sm text-slate-600 sm:text-base dark:text-slate-400">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-400">
             Upload a messy export from Facebook, Google Ads, Excel, or any CRM. AI maps the
             columns into GrowEasy CRM format — no manual mapping required.
           </p>
@@ -227,20 +231,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  onClick={handleReset}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800"
-                >
+                <button type="button" onClick={handleReset} className="btn-secondary">
                   <RotateCcw className="h-4 w-4" />
                   Change file
                 </button>
-                <button
-                  type="button"
-                  onClick={handleConfirm}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600"
-                >
-                  Confirm & Import
+                <button type="button" onClick={handleConfirm} className="btn-primary px-5">
+                  Confirm &amp; Import
                   <ArrowRight className="h-4 w-4" />
                 </button>
               </div>
@@ -288,16 +284,12 @@ export default function Home() {
                   type="button"
                   onClick={handleDownload}
                   disabled={!records.length}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50 disabled:opacity-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800"
+                  className="btn-secondary"
                 >
                   <Download className="h-4 w-4" />
                   Download CSV
                 </button>
-                <button
-                  type="button"
-                  onClick={handleReset}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600"
-                >
+                <button type="button" onClick={handleReset} className="btn-primary">
                   <RotateCcw className="h-4 w-4" />
                   Import another
                 </button>

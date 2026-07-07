@@ -46,7 +46,7 @@ export default function StatsCards({ totalRows, imported, skipped }: StatsCardsP
       {cards.map((c) => (
         <div
           key={c.label}
-          className="animate-fade-in rounded-xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900"
+          className="card animate-fade-in p-4 transition hover:shadow-md"
         >
           <div className="flex items-center justify-between">
             <span className="text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400">

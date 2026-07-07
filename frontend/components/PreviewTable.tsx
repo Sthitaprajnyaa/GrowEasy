@@ -14,7 +14,7 @@ export default function PreviewTable({ headers, rows, maxRows = 50 }: PreviewTab
   const visible = rows.slice(0, maxRows);
 
   return (
-    <div className="overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
+    <div className="card overflow-hidden">
       <div className="scrollbar-thin max-h-[28rem] overflow-auto">
         <table className="min-w-full border-collapse text-left text-sm">
           <thead className="sticky top-0 z-10 bg-slate-100 text-xs uppercase tracking-wide text-slate-600 shadow-sm dark:bg-slate-800 dark:text-slate-300">
