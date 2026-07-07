@@ -10,6 +10,8 @@ maps the arbitrary columns into GrowEasy's fixed CRM schema.
 
 **Position applied for:** Software Developer Intern
 
+📄 **Full technical documentation:** [DOCUMENTATION.md](./DOCUMENTATION.md) — architecture, AI extraction strategy, API reference, and design decisions.
+
 ---
 
 ## ✨ Features
