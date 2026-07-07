@@ -1,0 +1,5 @@
+Timestamp,Lead,Emails,Phones,Org,Notes,Lead Stage,Owner
+"May 13, 2026 2:20 PM","Ravi Shankar","ravi@music.com, ravi.backup@music.com","+919000000001 / +919000000002","Music Labs","Very keen, send brochure",Hot,agent1@groweasy.ai
+"May 13, 2026 2:25 PM","Lakshmi M","lakshmi@co.in","09000000003","Co India","Asked to call next Monday",Warm,agent2@groweasy.ai
+"May 13, 2026 2:30 PM","Anonymous Walkin","","","","Just browsing no details shared",Cold,agent1@groweasy.ai
+"May 13, 2026 2:35 PM","George T","george@abc.com","+91 90000 00004","ABC Corp","Deal signed and payment received",Won,agent3@groweasy.ai

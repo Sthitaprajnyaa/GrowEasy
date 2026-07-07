@@ -1,0 +1,6 @@
+created_time,full_name,email,phone_number,city,region,platform,ad_name
+2026-05-13T14:20:48+05:30,John Doe,john.doe@example.com,+91 98765 43210,Mumbai,Maharashtra,fb,Meridian Tower Launch
+2026-05-13T14:25:30+05:30,Sarah Johnson,sarah.johnson@example.com,+91 98765 43211,Bangalore,Karnataka,ig,Eden Park Villas
+2026-05-13T14:30:15+05:30,Rajesh Patel,,+91 98765 43212,Delhi,Delhi,fb,Sarjapur Plots
+2026-05-13T14:35:22+05:30,Priya Singh,priya.singh@example.com,,Pune,Maharashtra,ig,Meridian Tower Launch
+2026-05-13T14:40:00+05:30,No Contact Lead,,,Chennai,Tamil Nadu,fb,Eden Park Villas
